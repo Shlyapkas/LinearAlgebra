@@ -1,7 +1,8 @@
 import os
 import kagglehub
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt\
+
 
 # 1. Завантаження датасету ModelNet40 через kagglehub
 print("Перевірка датасету ModelNet40...")
@@ -98,7 +99,7 @@ def reflection_xy_3d(X):
     return A @ X, A
 
 
-# 4. Візуалізація з однакової пропорцією осей
+# 4. Візуалізація
 def plot_3d(X_orig, X_trans, title="3D Transformation"):
     fig = plt.figure(figsize=(12, 6))
 
@@ -139,7 +140,7 @@ def plot_3d(X_orig, X_trans, title="3D Transformation"):
     plt.show()
 
 
-# --- ДЕМОНСТРАЦІЯ ВИКОНАННЯ ---
+
 model_3d = read_off(off_file_path)
 
 # 1. Розтяг (Stretch)
